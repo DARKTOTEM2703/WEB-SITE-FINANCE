@@ -235,7 +235,7 @@
 
   .banner-text {
     font-size: 3.5vw; /* Ajusta el tamaño de la fuente del texto en la vista móvil */
-    top: 40%; /* Ajusta la posición del texto en la vista móvil */
+    top: 35%; /* Ajusta la posición del texto en la vista móvil */
     left: 50%;
     transform: translate(-50%, -50%);
     width: 90%;
@@ -243,14 +243,17 @@
   }
 
   .banner-button {
-    margin-top: 5rem; /* Ajusta el margen superior del botón en la vista móvil */
+    top: 50%; /* Ajusta la posición de los botones en la vista móvil */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
   .button-format1 {
-    width: 80%; /* Reduce el ancho de los botones en la vista móvil */
+    width: 70%; /* Reduce el ancho de los botones en la vista móvil */
     padding: 0.5rem 1rem; /* Ajusta el padding de los botones */
     margin: 0.5rem 0;
   }
@@ -308,4 +311,21 @@
     text-align: center;
     margin: 0.5rem 0;
   }
+
+  /* Cambia el orden de los elementos en la vista móvil */
+  .nav-bar a:nth-child(2) {
+    order: 1;
+  } /* Inicio */
+  .nav-bar a:nth-child(3) {
+    order: 2;
+  } /* Quiénes */
+  .nav-bar a:nth-child(4) {
+    order: 3;
+  } /* Planes de Financiamiento */
+  .nav-bar a:nth-child(5) {
+    order: 4;
+  } /* Contacto */
+  .nav-bar a:nth-child(6) {
+    order: 5;
+  } /* Consultoría Gratis */
 }
