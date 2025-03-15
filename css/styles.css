@@ -124,7 +124,8 @@
   //border: 1px solid #03bdf6;
 }
 .contenedor4 {
-  border: 1px solid #03bdf6;
+  background-color: #f1f1f1;
+  padding: 1rem;
 }
 .cards-container {
   width: 100%;
@@ -138,57 +139,173 @@
   width: 30%;
   margin: 1rem;
 }
-.card1 {
-  padding: 1rem 5rem;
-  float: left;
-  width: 30%;
+.card1,
+.card2,
+.card3 {
+  padding: 2rem 1rem;
   background-color: #03bdf6;
   flex: 1 1 calc(33.333% - 20px);
   margin: 10px;
-  margin-top: 0px;
-  margin-left: 0px;
   box-sizing: border-box;
+  text-align: center;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .card-title {
-  font-family: "impac", cursive;
+  font-weight: bold;
   color: #fff;
-  font-size: 2rem;
-  font-weight: 100;
-  margin: 6rem;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  align-self: center; /* Centra el título horizontalmente */
 }
 .formattxt {
+  margin: 1rem;
+  text-align: center;
+  display: block;
   font-family: "arial light", cursive;
   color: #fff;
   font-size: 1rem;
   font-weight: 100;
 }
 .card2 {
-  margin-left: 4rem;
-  padding: 0rem 8rem;
-  float: none;
-  display: inline-block;
   background-color: #03bdf6;
-  flex: 1 1 calc(33.333% - 20px);
-  margin: 10px;
-  margin-top: 0px;
-  box-sizing: border-box;
 }
 .card3 {
-  padding: 1rem 2rem;
-  float: right;
   background-color: #01d6a6;
-  flex: 1 1 calc(33.333% - 20px);
-  margin: 10px;
-  margin-top: 0px;
-  margin-right: 0px;
-  box-sizing: border-box;
 }
-
+.cards-container a {
+  display: block;
+  background-color: #fff;
+  text-decoration: none;
+  color: #000;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  margin-top: 1rem;
+  font-weight: bold;
+  align-self: center; /* Centra el botón horizontalmente */
+}
+.card-text {
+  color: #fff;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 200px;
+  align-self: center; /* Centra el texto horizontalmente */
+}
+.card-text + a {
+  align-self: center;
+  margin-top: auto;
+}
+.card-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 /* Asegúrate de que las tarjetas se apilen verticalmente en pantallas más pequeñas */
 @media (max-width: 768px) {
   .card1,
   .card2,
   .card3 {
     flex: 1 1 100%;
+    height: auto;
+  }
+
+  .banner {
+    height: 40rem; /* Ajusta la altura de la imagen en la vista móvil */
+    background-size: cover;
+    background-position: center;
+    position: relative; /* Asegura que los elementos hijos se posicionen correctamente */
+  }
+
+  .banner-title {
+    font-size: 5vw; /* Ajusta el tamaño de la fuente del título en la vista móvil */
+    top: 20%; /* Ajusta la posición del título en la vista móvil */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    padding: 0.5rem;
+  }
+
+  .banner-text {
+    font-size: 3.5vw; /* Ajusta el tamaño de la fuente del texto en la vista móvil */
+    top: 40%; /* Ajusta la posición del texto en la vista móvil */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    padding: 0.5rem;
+  }
+
+  .banner-button {
+    margin-top: 5rem; /* Ajusta el margen superior del botón en la vista móvil */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .button-format1 {
+    width: 80%; /* Reduce el ancho de los botones en la vista móvil */
+    padding: 0.5rem 1rem; /* Ajusta el padding de los botones */
+    margin: 0.5rem 0;
+  }
+
+  .nav-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navformat {
+    float: none;
+    margin: 0.5rem 0;
+  }
+
+  .cards-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .formatcard1 {
+    width: 90%;
+    margin: 0.5rem 0;
+  }
+
+  .nav-bar a {
+    display: block;
+    margin: 0.5rem 0;
+  }
+
+  /* Ajustes adicionales para la vista móvil */
+  .contenedor1,
+  .contenedor4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cont1format,
+  .redes,
+  .number,
+  .logo,
+  .navformat,
+  .nav-button,
+  .green-button,
+  .white-button,
+  .blue-button,
+  .banner-button,
+  .formatcard1,
+  .card-title,
+  .formattxt,
+  .card-text,
+  .card-content {
+    width: 100%;
+    text-align: center;
+    margin: 0.5rem 0;
   }
 }
