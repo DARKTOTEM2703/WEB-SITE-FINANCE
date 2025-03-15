@@ -10,7 +10,7 @@
   font-family: "sans-serif";
   display: inline-block;
   font-size: 1rem;
-  margin: 1rem;
+  margin: 1.5rem;
 }
 .redes {
   text-decoration: none;
@@ -22,6 +22,7 @@
   transform: scale(1.1); /* Agranda el enlace de redes sociales */
 }
 .number {
+  font-size: 1.6rem;
   text-align: center;
   float: right;
   transition: transform 0.3s ease-in-out; /* Transición suave */

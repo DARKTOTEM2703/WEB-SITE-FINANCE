@@ -1,0 +1,162 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "arial light", cursive;
+  background-color: #f1f1f1;
+  line-height: 1.6;
+  color: #333;
+}
+
+.contenedor_azul {
+  background-color: #03bdf6;
+  padding: 1rem;
+  text-align: center;
+}
+
+.logo {
+  max-width: 100px;
+}
+
+.contenedor2 {
+  text-align: center;
+  padding: 2rem;
+}
+
+.contenedor2 p {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.contenedorformulario {
+  background-color: #fff;
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 600px;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+}
+
+.tituloform {
+  font-size: 1.5rem;
+  color: #03bdf6;
+  text-align: center;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.subtituform {
+  font-size: 1rem;
+  color: #666;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.input1,
+.interes {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+}
+
+.input1.full-width {
+  grid-column: span 2;
+}
+
+.botonenviar {
+  background-color: #03bdf6;
+  color: #fff;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  width: 100%;
+  font-size: 1rem;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  grid-column: span 2;
+}
+
+.botonenviar:hover {
+  transform: scale(1.05);
+  background-color: #029ec4;
+}
+
+.botonvolver {
+  background-color: #f44336;
+  color: #fff;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  width: 100%;
+  font-size: 1rem;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  grid-column: span 2;
+  margin-top: 1rem;
+}
+
+.botonvolver:hover {
+  transform: scale(1.05);
+  background-color: #d32f2f;
+}
+
+.radio {
+  text-align: center;
+  margin-top: 1rem;
+  grid-column: span 2;
+}
+
+.radio input {
+  margin: 0 0.5rem;
+}
+
+footer {
+  text-align: center;
+  margin-top: 2rem;
+  color: #666;
+  font-size: 0.875rem;
+  grid-column: span 2;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+  grid-column: span 2;
+}
+
+input,
+select,
+button {
+  font-family: inherit;
+}
+
+input::placeholder {
+  color: #999;
+}
+
+@media (min-width: 768px) {
+  .contenedorformulario {
+    padding: 3rem;
+  }
+
+  .input1,
+  .interes {
+    padding: 1rem;
+  }
+
+  .botonenviar,
+  .botonvolver {
+    padding: 1rem;
+  }
+}
