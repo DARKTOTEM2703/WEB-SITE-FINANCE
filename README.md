@@ -59,7 +59,7 @@ Los archivos CSS (`styles.css`, `styles2.css`, `styles3.css`) están diseñados 
 1. **Clonar el repositorio**:
 
    ```bash
-   git clone https://github.com/tu-usuario/tu-repositorio.git
+   git clone https://github.com/DARKTOTEM2703/WEB-SITE-FINANCE
    ```
 
 2. **Abrir el proyecto en tu editor de código preferido**.
