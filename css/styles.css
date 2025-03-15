@@ -16,10 +16,18 @@
   text-decoration: none;
   color: #c4c4c2;
   text-transform: uppercase;
+  transition: transform 0.3s ease-in-out; /* Transición suave */
+}
+.redes:hover {
+  transform: scale(1.1); /* Agranda el enlace de redes sociales */
 }
 .number {
   text-align: center;
   float: right;
+  transition: transform 0.3s ease-in-out; /* Transición suave */
+}
+.number:hover {
+  transform: scale(1.1); /* Agranda el número */
 }
 .logo {
   color: #03bdf6;
@@ -149,11 +157,11 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  border: 1px solid #03bdf6;
+  //border: 1px solid #03bdf6;
 }
-.formatcard1 {
+.format1 {
   display: inline-block;
-  width: 30%;
+  weight: 30%;
 }
 .card1,
 .card2,
@@ -170,7 +178,7 @@
   justify-content: space-between;
 }
 .card-title {
-  padding-top: 8rem;
+  padding-top: 6rem;
   font-weight: bold;
   color: #fff;
   font-size: 2rem; /* Aumenta el tamaño de la fuente */
@@ -203,6 +211,7 @@
   margin-top: auto; /* Empuja el botón hacia la parte inferior */
 }
 .card-text {
+  margin-top: 0.1rem;
   color: #fff;
   font-size: 1rem;
   display: flex;
@@ -211,7 +220,8 @@
   flex-direction: column;
   align-self: center; /* Centra el texto horizontalmente */
   text-align: center;
-  height: 100%; /* Asegura que el texto ocupe toda la altura disponible */
+  height: 200px; /* Asegura que el texto ocupe toda la altura disponible */
+  margin-bottom: 0.2rem;
 }
 .card-text + a {
   align-self: center;
@@ -344,4 +354,112 @@
   .nav-bar a:nth-child(6) {
     order: 5;
   } /* Consultoría Gratis */
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Transición suave */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1); /* Sombra de fondo predeterminada */
+}
+
+.card.visible {
+  opacity: 1; /* Visible cuando se agrega la clase 'visible' */
+  transform: translateY(0); /* Asegura que la carta esté en su posición final */
+}
+
+.card:hover {
+  transform: scale(1.2); /* Agranda la carta */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Sombra más intensa al pasar el cursor */
+  animation: fadeIn 0.5s forwards; /* Animación de desvanecimiento al pasar el cursor */
+}
+
+button,
+.button-format1,
+.nav-button,
+.green-button,
+.white-button,
+.blue-button {
+  transition: transform 0.3s ease-in-out; /* Transición suave */
+}
+
+button:hover,
+.button-format1:hover,
+.nav-button:hover,
+.green-button:hover,
+.white-button:hover,
+.blue-button:hover {
+  transform: scale(1.1); /* Agranda el botón */
+}
+
+.about-section {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centra el contenido horizontalmente */
+  padding: 5rem;
+  padding-top: 2rem; /* Ajusta el relleno superior */
+  background-color: #f0f0f0; /* Color de fondo más oscuro que el blanco */
+}
+
+.about-text {
+  flex: 1;
+  padding-right: 1rem; /* Reduce el padding derecho */
+  max-width: 600px; /* Limita el ancho máximo del texto */
+}
+
+.about-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.about-description {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.about-button {
+  display: inline-block;
+  background-color: #03bdf6;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  text-decoration: none;
+  font-weight: bold;
+  transition: transform 0.3s ease-in-out;
+}
+
+.about-button:hover {
+  transform: scale(1.1);
+}
+
+.about-image {
+  flex: 1;
+  text-align: right; /* Centra la imagen horizontalmente */
+  padding-left: 1rem; /* Reduce el padding izquierdo */
+}
+
+.about-image img {
+  max-width: 100%; /* Ajusta el tamaño máximo de la imagen */
+  height: auto;
+  border-radius: 0.5rem;
 }
